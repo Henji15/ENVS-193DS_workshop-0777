@@ -2,9 +2,8 @@
 title: "Linear regression"
 author: "Max Tu"
 date: "2025-05-15"
-format:
-  html:
-    toc: true # use this to display a table of contents
+format: html
+toc: true # use this to display a table of contents
 execute:
   message: false # use this to make sure messages don't show up
   warning: false # use this to make sure warnings don't show up
@@ -65,8 +64,11 @@ ggplot(data = abalone_clean,
   # first layer: points representing abalones
   geom_point(size = 4,
              stroke = 1,
-             fill = "firebrick4",
+             fill = "#674532",
              shape = 21)
+theme_minimal() + 
+  labs(x = "pH",
+       y = "Change in shell surface area")
 ```
 
 ## d. Abalone model
